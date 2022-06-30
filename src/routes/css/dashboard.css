@@ -1,0 +1,230 @@
+.Dashboard{
+    background-color: #202020;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    overflow-y: scroll;
+}
+Link{
+    text-decoration: none;
+    cursor:pointer;
+    color: blue;
+}
+button{
+    cursor: pointer;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+.Dashboard .name{
+    /* border: 2px solid red; */
+    
+    padding-top: 1rem;
+    /* margin-left: 3rem; */
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    
+}
+.Dashboard .name .logoutlink{
+    font-size: 20px;
+    text-decoration:underline;
+}
+.name span{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-left: 5rem;
+}
+.dash-body{
+    margin-left: 5rem;
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.dash-cont-one{
+    /* border: 2px solid red; */
+    /* margin-left: 4rem; */
+    width: 50%;
+}
+.dash-cont-two{
+    /* border: 2px solid blue; */
+    margin-right: 10rem;
+    /* height: fit-content; */
+    /* margin-top: 9rem; */
+    text-align: center;
+}
+.dash-cont-two p{
+    margin-top: 1rem;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.dash-cont-one form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* width: 80%; */
+}
+.dash-body input[type="text"]{
+    border-radius: 8px;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    text-indent: 5px;
+    font-size: 13px;
+}
+form .linkname{
+    width: 9vw;
+}
+::placeholder{
+    color: black;
+    opacity: .8;
+    font-size: 12px;
+}
+
+.allLinks{
+    padding: 1rem;
+    /* border: 2px solid blue; */
+    /* margin-left: 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    /* width: 80%; */
+}
+.link{
+    color: white;
+    padding: 10px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    background-color: #ff66c4;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.link:nth-child(1){
+    background-color: #ff914d;
+}
+.link:nth-child(2){
+    background-color: #ff66c4;
+}
+.link:nth-child(3){
+    background-color: #5271ff;
+}
+.link:nth-child(4){
+    background-color: #7ed957;
+}
+.link:nth-child(5){
+    background-color: #ff914d;
+}
+.link h3{
+    font-size: 1.2rem;
+}
+.link p{
+    /* border: 2px solid red; */
+    white-space: normal;
+    word-break: break-all;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    max-width: 90%;
+}
+.link button span{
+    margin: auto;
+    position: relative;
+    right:1vh;
+}
+
+@media (max-width: 920px){
+    .Dashboard{
+        height: 100vh;
+        /* width: 100%; */
+        
+    }
+    .Dashboard .name{
+        /* margin-left: .5rem; */
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .Dashboard .name span{
+        font-size: 2rem;
+        width: fit-content;
+        margin: auto;
+    }
+    .Dashboard .name .logoutlink{
+        font-size: 15px;
+    }
+    .dash-body{
+        flex-direction: column-reverse;
+        /* margin-top: 0; */
+        margin: auto;
+        width: fit-content;
+
+    }
+    .allLinks{
+        margin-left: 0;
+        grid-template:70px/auto;
+        grid-gap: 19px;
+        
+    }
+    .link{
+        /* width: 8rem; */
+        height: fit-content;
+        margin: auto;
+    }
+    .dash-cont-one{
+        /* margin-left: 0; */
+        margin: auto;
+        margin-top: 1rem;
+        align-items: center;
+        width: fit-content;
+    }
+    .dash-cont-two{
+        margin: 0;
+        /* padding: 30px; */
+        /* width: 100vw; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Dashboard ::placeholder{
+        font-size: .7rem;
+    }
+    .dash-body input[type="text"]{
+        width: 10rem;
+        height: 1.4rem;
+        text-indent: 5px;
+        font-size: 14px;
+    }
+    .dash-body input[type="submit"]{
+        font-size: .9rem;
+    }
+    .dash-cont-one form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+    .dash-cont-two h1{
+        font-size: 1.5rem;
+    }
+    .dash-cont-two p{
+        /* width: 100vw; */
+        margin: auto;
+        font-size: 70%;
+        white-space: normal;
+        word-break: break-all;
+        max-width: 100%;
+        text-align: center;
+    }
+}
